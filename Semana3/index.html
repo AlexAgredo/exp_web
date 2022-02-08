@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form style="display: flex; flex-direction: column;" action="table.html" method="POST">
+        <label for="username">Nombre del usuario: </label>
+        <input type="text" id="username">
+        <label for="pass"> Password: </label>
+        <input type="password" name="password" id="pass">
+        <label for="phone">Celular: </label>
+        <input type="number" name="phone" id="phone" step="10">
+        <label for="age">Rango de edad: </label>
+        <input type="range" name="age" id="age" min="13" max="70">
+
+        <h5>Escoge tus hobbies favoritos</h5>
+        <label for="hobbies"> Correr </label>
+        <input type="checkbox" name="correr" id="correr">
+        <label for="hobbies"> Cocinar </label>
+        <input type="checkbox" name="cocinar" id="cocinar">
+        <label for="hobbies"> Comer </label>
+        <input type="checkbox" name="comer" id="comer">
+        <label for="hobbies"> Dormir </label>
+        <input type="checkbox" name="dormir" id="dormir">
+        <label for="hobbies"> Jugar videojuegos </label>
+        <input type="checkbox" name="vg" id="vg">
+
+        <h5>Dime tu genero: </h5>
+        <label for="genre">Masculino </label>
+        <input type="radio" name="genre" id="genre">
+        <label for="genre">Femenino </label>
+        <input type="radio" name="genre" id="genre">
+        <label for="genre">Prefiero no decirlo </label>
+        <input type="radio" name="genre" id="genre">
+
+        <select name="city" id="city">
+            <option value="bogota">Bogotá</option>
+            <option value="bogota">Cali</option>
+            <option value="bogota">Medellin</option>
+            <option value="bogota">Bucaramanga</option>
+        </select>
+
+        <label for="barrios">Escoge el barrio en el que resides: </label>
+        <input type="text" list="barrios">
+        <datalist id="barrios">
+            <option value="Bocha"></option>
+            <option value="Ciudad Jardin"></option>
+            <option value="Flora"></option>
+            <option value="Laureles"></option>
+        </datalist>
+
+        <label for="comments">Dejanos un comentario de lo que opinas de este servicio: </label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
