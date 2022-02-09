@@ -11,7 +11,7 @@
 <body style="margin: 0;">
     <header>
         <img src="https://www.places4students.com/P4SFiles/sliders/964_2.jpg" alt="img header"
-            style="width: 100%; height: 400px;">
+            style="width: 100%; height: 300px;">
         <nav style="text-align: center;padding: 12px;background-color: indigo;opacity: 50%;">
             <span style="font-size: 24px;"> <a style="color: white;" href="./semana2-2.html"> Inicio</a> <a
                     style="color: white;" href="./galeria.html">Galeria</a>
@@ -20,18 +20,98 @@
         </nav>
     </header>
     <main>
-        <section>
-            <p style="padding: 15px;font-size: 20px;color: rgb(47, 47, 47);margin-top: 0;margin-bottom: 0;">
-                Somos un equipo de artistas y profesionales que enseñamos y aprendemos las técnicas propias de las artes
-                digitales, usadas en el cine y los videojuegos. Buscamos impulsar el desarrollo de la industria del
-                entretenimiento y su innovación tecnológica en Latinoamérica a través de nuestros programas de
-                formación.
-            </p>
+        <section style="display: flex; margin-top: 0;">
+            <h3 style="font-size: 40px; color:darkgoldenrod;background-color:lemonchiffon; margin: 0; padding: 4%;">Somos apasionados por contar historias a través de las artes digitales.</h3>
+            <div style="padding: 3%;">
+                <h4 style="font-size: 30px;color:darkviolet;margin-top: 0;margin-bottom: 0;">¿Quiénes somos?</h4>
+                <p style="font-size: 20px;color: rgb(47, 47, 47);margin-top: 0;margin-bottom: 0;">
+                    Somos un equipo de artistas y profesionales que enseñamos y aprendemos las técnicas propias de las artes
+                    digitales, usadas en el cine y los videojuegos. Buscamos impulsar el desarrollo de la industria del
+                    entretenimiento y su innovación tecnológica en Latinoamérica a través de nuestros programas de
+                    formación.
+                </p>
+                <h4 style="font-size: 30px;color:darkviolet;margin-top: 2;margin-bottom: 0;">¿Qué hacemos?</h4>
+                <p style="font-size: 20px;color: rgb(47, 47, 47);margin-top: 0;margin-bottom: 0;">
+                    Creamos programas de formación basados en técnicas actuales usadas en la producción de artes digitales para el cine y los videojuegos, a través de un plan acorde a las nuevas necesidades del mercado.
+                </p>
+            </div>
         </section>
-        <div style="text-align: center;">
-            <img src="https://cdn.flippednormals.com/wp-content/uploads/2019/07/01162752/img_1-2.jpg"
-                alt="Imagen de modelado 3D" width="1280" height="720">
+        <div style="text-align: center; padding: auto;margin: auto;">
+            <img src="https://pbs.twimg.com/media/B62b434CMAAfPRP.jpg"
+                alt="Imagen de la escuela de modelado 3D" width="100%" height="700px">
         </div>
+
+        <section style="display: flex; margin-left:40px;margin-right: 40px;margin-top: 20px;margin-bottom: 0px;">
+            <div style="background-color:lemonchiffon;">
+                <h3 style="font-size: 40px; color:darkgoldenrod; margin-bottom: 0;">Plan de estudios</h3>
+                <p style="font-size: 20px;">Nuestro programa de Talento Especializado en Artes digitales para cine y videojuegos tiene una duración de 12 semanas y contempla los siguientes temas:</p>
+                <img src="https://cdn.cghero.com/system/front/services/3d-modeling/characters/CGH508-1-1200.png?size=xl" alt="modelo 3D transparente" width="200" height="300">
+            </div> 
+            <div style="padding: 3%; background-color:rgba(144, 238, 144, 0.63);">
+                <h4 style="font-size: 30px;color:darkviolet;margin-bottom: 0;">TEMAS</h4>
+                <div style="font-size: 20px;color: rgb(47, 47, 47);margin-top: 0;margin-bottom: 0;display: flex;">
+                    <ul>
+                        <li>Introducción al modelado en Maya</li>
+                        <li>Introducción a la escultura digital con ZBrush</li>
+                        <li>Anatomia para artistas digitales</li>
+                        <li>Dibujo</li>
+                       </ul>
+                    <ul>
+                        <li>Producción de efectos visuales</li>
+                        <li>Animación 3D</li>
+                        <li>Texturizado en Substance Painter</li>
+                        <li>Composición y posproducción</li>
+                       </ul>
+                </div>      
+            </div>
+        </section>
+
+        <section style="margin: 0px;">
+        <h2 style="font-size: 32px;color:indigo;text-align: center;">¿Quieres inscribirte?</h2>
+        <p style="font-size: 20px;color: rgb(47, 47, 47);margin-top: 0;margin-bottom: 0;">Envianos tu informacion para que podamos ponernos en contacto contigo: </p>
+        <form action="form.html" method="post">
+            <label for="username">Nombre completo: </label>
+            <input type="text" id="username">
+            <label for="phone">Celular: </label>
+            <input type="number" name="phone" id="phone">
+            <label for="age">Edad: </label>
+            <input type="number" name="age" id="age" step="10">
+
+            <h3>Genero: </h3>
+            <label for="genero">Masculino </label>
+            <input type="radio" name="genero" id="genero">
+            <label for="genero">Femenino </label>
+            <input type="radio" name="genero" id="genero">
+            <label for="genero">Prefiero no decirlo </label>
+            <input type="radio" name="genero" id="genero">
+
+            <h3>Ciudad en la que resides: </h3>
+            <select name="city" id="city">
+                <option value="bogota">Bogotá</option>
+                <option value="cali">Cali</option>
+                <option value="medellin">Medellin</option>
+                <option value="bucaramanga">Bucaramanga</option>
+            </select>
+            <label for="city">Otra: </label>
+            <input type="text" name="city" id="city">
+
+            <h3>¿Qué te gusta hacer en tu tiempo libre?</h3>
+            <label for="hobbies"> Dibujar </label>
+            <input type="checkbox" id="dibujar">
+            <label for="hobbies"> Pintar </label>
+            <input type="checkbox" id="pintar">
+            <label for="hobbies"> Programar </label>
+            <input type="checkbox" id="programar">
+            <label for="hobbies"> Escuchar música </label>
+            <input type="checkbox" id="musica">
+            <label for="hobbies"> Jugar videojuegos </label>
+            <input type="checkbox" id="vg">
+
+
+
+
+        </form>
+        </section>
     </main>
     <footer style="background-color: indigo;opacity: 50%;">
         <p style="color: white; text-align: center;">© 2021 ALX studios - is all you want.
