@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; /*esto hace que 1rem equivalga a 10px*, el rem se usa para que sea responsive (usarlo primordialmente con el texto), es parecido al % */
+    font-family: Montserrat,sans-serif;
+}
+
+header{
+    background-color: indigo;
+    opacity: 50%;
+    margin-top: 0rem;
+}
+.headerTitle{
+    font-size: 3.5rem; 
+    color: white; 
+    text-align: center;
+    padding-top: 2%;
+}
+.listHeader{ /*contenedor*/
+    list-style: none;
+    width: 100%; 
+    display: flex;
+    justify-content: center; /*funciona con el flex*. align sirve para alinear vertical, justify content para horizontal*/
+}
+.listHeader a{ /*contenido (texto) del contenedor*/
+    color: white;
+    font-size: 2.4rem;
+    letter-spacing: 0.1rem;
+}
+.listHeader li{
+    display: inline-block; /*pone la lista en horizontal*/
+}
+.listHeader li a{
+    padding: 10px;
+}
+.listHeader li a:hover{
+    color: darkgoldenrod;
+}
+
+h3{
+    font-size: 2.4rem;
+}

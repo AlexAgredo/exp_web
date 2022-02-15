@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ALX studios</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="headerTitle">ALX Studios</h1>
+        <ul class="listHeader">
+            <li> <a href="./index.html"> Inicio</a> </li>
+            <li> <a href="./pages/galeria.html">Galeria</a> </li>
+            <li> <a href="./nosotros.html">Nosotros</a> </li>
+            <li> <a href="./contacto.html">Contacto</a> </li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h3>
+                Somos apasionados por contar historias a través de las artes digitales.</h3>
+            <div>
+                <h4>¿Quiénes somos?</h4>
+                <p>
+                    Somos un equipo de artistas y profesionales que enseñamos y aprendemos las técnicas propias de las
+                    artes
+                    digitales, usadas en el cine y los videojuegos. Buscamos impulsar el desarrollo de la industria del
+                    entretenimiento y su innovación tecnológica en Latinoamérica a través de nuestros programas de
+                    formación.
+                </p>
+                <h4>¿Qué hacemos?</h4>
+                <p>
+                    Creamos programas de formación basados en técnicas actuales usadas en la producción de artes
+                    digitales para el cine y los videojuegos, a través de un plan acorde a las nuevas necesidades del
+                    mercado.
+                </p>
+            </div>
+        </section>
+        <div>
+            <img src="https://pbs.twimg.com/media/B62b434CMAAfPRP.jpg" alt="Imagen de la escuela de modelado 3D"
+                width="100%" height="700px">
+        </div>
+
+        <section>
+            <div>
+                <h3>Plan de estudios</h3>
+                <p>Nuestro programa de Talento Especializado en Artes digitales para cine y
+                    videojuegos tiene una duración de 12 semanas y contempla los siguientes temas:</p>
+                <img src="https://cdn.cghero.com/system/front/services/3d-modeling/characters/CGH508-1-1200.png?size=xl"
+                    alt="modelo 3D transparente" width="200" height="300">
+            </div>
+            <div>
+                <h4>TEMAS</h4>
+                <div>
+                    <ul>
+                        <li>Introducción al modelado en Maya</li>
+                        <li>Introducción a la escultura digital con ZBrush</li>
+                        <li>Anatomia para artistas digitales</li>
+                        <li>Dibujo</li>
+                    </ul>
+                    <ul>
+                        <li>Producción de efectos visuales</li>
+                        <li>Animación 3D</li>
+                        <li>Texturizado en Substance Painter</li>
+                        <li>Composición y posproducción</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>¿Quieres inscribirte?</h2>
+            <p>Envianos tu informacion
+                para que podamos ponernos en contacto contigo: </p>
+            <br>
+            <form action="form.html" method="post">
+                <label for="username">Nombre completo: </label>
+                <input type="text" id="username">
+                <label for="phone">Celular: </label>
+                <input type="number" name="phone" id="phone">
+                <label for="age">Edad: </label>
+                <input type="number" name="age" id="age" step="10">
+
+                <h3>Genero: </h3>
+                <label for="genero">Masculino </label>
+                <input type="radio" name="genero" id="genero">
+                <label for="genero">Femenino </label>
+                <input type="radio" name="genero" id="genero">
+                <label for="genero">Prefiero no decirlo </label>
+                <input type="radio" name="genero" id="genero">
+
+                <h3>Ciudad en la que resides: </h3>
+                <select name="city" id="city">
+                    <option value="bogota">Bogotá</option>
+                    <option value="cali">Cali</option>
+                    <option value="medellin">Medellin</option>
+                    <option value="bucaramanga">Bucaramanga</option>
+                </select>
+                <label for="city">Otra: </label>
+                <input type="text" name="city" id="city">
+
+                <h3>¿Qué te gusta hacer en tu tiempo libre?</h3>
+                <label for="hobbies"> Dibujar </label>
+                <input type="checkbox" id="dibujar">
+                <label for="hobbies"> Pintar </label>
+                <input type="checkbox" id="pintar">
+                <label for="hobbies"> Programar </label>
+                <input type="checkbox" id="programar">
+                <label for="hobbies"> Escuchar música </label>
+                <input type="checkbox" id="musica">
+                <label for="hobbies"> Jugar videojuegos </label>
+                <input type="checkbox" id="vg">
+                <br>
+                <br>
+                <label for="comments">Dejanos un comentario o alguna duda: </label>
+                <br>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2021 ALX studios - is all you want.
+            <br>
+            DatoLabs SAS es Representante único y exclusivo de ALX studios LLC en Colombia para la comercialización de
+            productos y servicios.
+        </p>
+    </footer>
+</body>
+
+</html>
