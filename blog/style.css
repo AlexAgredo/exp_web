@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url();
+}
+html{
+    background-color:rgba(255, 197, 183, 0.308);
+}
+header{
+    background-image: linear-gradient(210deg, #fff570 0, #dd8e0f 50%, #d47100 100%);
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header img{
+    width: 15%;
+    height: 15%;
+    margin-bottom: 0px;
+}
+header h1{
+    font-size: 2rem; 
+    color: white; 
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.container{
+    background-color: rgba(241, 219, 157, 0.383);
+    margin-top: 10px;
+    width: 33%;
+    height: 600px;   
+}
+.background{
+    width: 100%;
+    height:600px;
+    background-image: url(https://www.eluniversal.com.co/sites/default/files/201502/shake_shack_2.jpg);
+    background-repeat: no-repeat;
+    
+}
