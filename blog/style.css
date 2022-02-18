@@ -1,44 +1,207 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@font-face {
-    font-family: "Roboto";
-    src: url();
+html {
+  font-family: "Fugaz One", cursive;
+  background-color: rgba(255, 197, 183, 0.308);
 }
-html{
-    background-color:rgba(255, 197, 183, 0.308);
+header {
+  background-image: linear-gradient(
+    210deg,
+    #fff570 0,
+    #dd8e0f 50%,
+    #d47100 100%
+  );
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-header{
-    background-image: linear-gradient(210deg, #fff570 0, #dd8e0f 50%, #d47100 100%);
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header img {
+  width: 15%;
+  height: 15%;
+  margin-bottom: 0px;
 }
-header img{
-    width: 15%;
-    height: 15%;
-    margin-bottom: 0px;
+header h1 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
-header h1{
-    font-size: 2rem; 
-    color: white; 
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 5px;
+.containerPadre{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content:flex-start
 }
-.container{
-    background-color: rgba(241, 219, 157, 0.383);
-    margin-top: 10px;
-    width: 33%;
-    height: 600px;   
+.container {
+  margin:20px;
+  width: 25%;
+  height: 60%;
 }
-.background{
-    width: 100%;
-    height:600px;
-    background-image: url(https://www.eluniversal.com.co/sites/default/files/201502/shake_shack_2.jpg);
-    background-repeat: no-repeat;
-    
+.imgFondo {
+  background-image: url(https://restaurante.guide/wp-content/uploads/2020/02/shake-burger-portada3.jpg);
+  background-size: cover;
+  background-position: -100px;
+}
+.imgFondo2{
+  background-image: url(https://images.rappi.com/products/2092484082-1598648535258.png);
+  background-size: cover;
+  background-position: 2px;
+}
+.imgFondo3{
+  background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/1c/e5/5a/e0/hamburguesa-club-buenos.jpg);
+  background-size: cover;
+  background-position: 0px;
+}
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.backdrop:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.content {
+  object-fit: cover;
+  padding-top: 95%;
+}
+.content h2 {
+  padding: 2%;
+  padding-bottom: 0%;
+  color: white;
+}
+.content p {
+  padding: 2%;
+  padding-top: 0%;
+  padding-bottom: 3%;
+  color: rgb(230, 230, 230);
+}
+.verMas {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 2% 5%;
+  border-radius: 100px;
+  display: inline-block;
+  background-color: #ffde22;
+  text-transform: uppercase;
+  margin-left: 70%;
+  margin-bottom: 3%;
+}
+.verMas:hover {
+  background-color: #ff7322;
+}
+.blogCont {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(207, 207, 207);
+  border-radius: 100px;
+  display: inline-block;
+}
+.blogCont h2 {
+  padding-bottom: 0%;
+  padding-left: 5%;
+  padding-top: 1%;
+  color: rgb(252, 118, 41);
+  font-size: 30px;
+}
+.blogCont p {
+  font-style: normal;
+  font-size: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0%;
+}
+.blogCont .ImgCalificacion {
+  padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.blogCont .fotHamburguesa {
+  margin-right: 10%;
+}
+.blogCont .calificacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+.calificacion h4 {
+  position: relative;
+  font-size: 30px;
+  color: #4b2d0b;
+}
+.calificacion h1 {
+  margin-left: 10%;
+  font-size: 60px;
+  color: #dd8e0f;
+}
+.autor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  padding-top: 2%;
+  padding-bottom: 0%;
+}
+.autor p {
+  color: rgb(87, 87, 87);
+  padding-right: 10%;
+}
+.networks {
+  padding-top: 1%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2%;
+  align-items: center;
+}
+.networks p {
+  padding-right: 0%;
+  width: 50%;
+}
+.networks a {
+  width: 10%;
+  height: 40%;
+  text-align: center;
+}
+.networks .insta {
+  width: 50%;
+  height: 100%;
+  opacity: 0.5;
+}
+.networks .insta:hover {
+  opacity: 1;
+}
+.networks form {
+  margin-left: 25%;
+}
+.volver {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 60% 90%;
+  border-radius: 100px;
+  display: inline-block;
+  background-color: #ffde22;
+  text-transform: uppercase;
+}
+.volver:hover {
+  background-color: #ff7322;
 }
