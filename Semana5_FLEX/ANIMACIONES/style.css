@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.circle {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: cornflowerblue;
+
+  /*Animation*/
+  animation-name: mover; /* un keyframe que permiten controlar todo el flujo de la animacion */
+  animation-duration: 1s; /*se usa para darle una duración a la animación*/
+  animation-iteration-count: infinite; /*define cuantas veces sera repetida la animación*/
+  animation-direction: alternate; /* indica desde que punto de la animacion debe partir desde inicio a fin (normal, 0-100) 
+  reverse (100-0)
+  alternate (0-100-0)
+  alternate-reverse (100-0-100)*/
+  animation-fill-mode: backwards; /* define si los estilos de la animacion permaneceran o se quitaran (none) 
+  forwards: los estilos del ultimo punto se seguiran aplicando
+  backwards: los estilos del primer punto se seguiran aplicando necesita animation-delay 
+  both: mezcla entre forwards y backwards */
+  animation-delay: 1s; /* define un tiempo de espera para que la animacion se ejecute */
+  animation-timing-function: ease; /* define la curva de aceleración
+  ease: aumenta la velocidad hacia la mitad de la animación y disminuye la velocidad al final 
+  ease-in: aumenta progresivamente la velocidad de la animación
+  ease-out: disminuye progresivamente la velocidad
+  ease-in-out: disminuye progresivamente la velocidad de la animación, aumenta y luego disminuye 
+  linear: velc constante*/
+
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+}
+
+.circle:hover {
+  animation-play-state: paused; /* animacion activa o en pausa */
+  cursor: pointer;
+}
+
+@keyframes color {
+  /* se usa con porcentajes o palabras clave (from,  to) */
+  0% {
+    background-color: blueviolet;
+  }
+  100% {
+    background-color: black;
+  }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  } /* en caso tal de no tener un 100% definido se toma automaticamente del estado inicial del elemento*/
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(40%);
+    background-color: red;
+  }
+  100% {
+    transform: translateX(100%)
+      /* translateY(100%) regresa de golpe a su estado inicial */;
+    background-color: yellow;
+  }
+}

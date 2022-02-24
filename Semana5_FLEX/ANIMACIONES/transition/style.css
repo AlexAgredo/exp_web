@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: red;
+}
+.container {
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #fff;
+}
+
+.elemento {
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  transition-property: transform; /* propiedades que van a hacer animadas, con all coge todas las propiedades */
+  transition-duration: 2s; /* tiempo de duración de la animación */
+  transition-timing-function: cubic-bezier(
+    0.075,
+    0.82,
+    0.165,
+    1
+  ); /* propiedad especifica la curva de velocidad del efecto de transición 
+  ease- especifica un efecto de transición con un comienzo lento, luego rápido, luego termina lentamente (esto es predeterminado)
+linear- especifica un efecto de transición con la misma velocidad de principio a fin
+ease-in- especifica un efecto de transición con un comienzo lento
+ease-out- especifica un efecto de transición con un final lento
+ease-in-out- especifica un efecto de transición con un comienzo y un final lentos
+cubic-bezier(n,n,n,n)- le permite definir sus propios valores en una función cubic-bezier*/
+  transition-delay: 300ms; /* retardo en empezar la animación */
+
+  transition: all 1s 2s ease-out; /* combian todas las propiedaes  */
+}
+
+.container:hover .elemento {
+  transform: translate(250px);
+  background-color: blueviolet;
+}

@@ -1,0 +1,28 @@
+.container{
+display: grid;
+background-color: antiquewhite;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+padding: 20px;
+height: 50vh;
+row-gap: 20px;
+column-gap: 20px;
+}
+
+.item{
+    background-color: rgb(63, 68, 141);
+    font-size: 30px;
+    text-align: center;
+}
+
+.one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.dos{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

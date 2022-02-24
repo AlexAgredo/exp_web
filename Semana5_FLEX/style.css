@@ -1,0 +1,12 @@
+.container{
+ background-color: antiquewhite;
+ padding: 40px;
+ display: flex;
+ flex-direction:column;  
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin-top: 10px;
+}
