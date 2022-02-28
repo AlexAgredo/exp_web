@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; /*esto hace que 1rem equivalga a 10px*, el rem se usa para que sea responsive (usarlo primordialmente con el texto), es parecido al % */
+    font-family: Montserrat,sans-serif;
+}
+header {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.divHeader{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin: 0 6.7%;
+}
+
+.divHeader img{
+    width: 18%;
+    height: 18%;
+    z-index: 1;
+    mix-blend-mode:luminosity;
+}
+.divHeader ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.divHeader li{
+    padding: 4%;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.divHeader a{
+    text-decoration: none;
+    color: #54759C; /*complementarios*/
+}
+
+.divHeader a:hover{
+    color: #E8CA95;
+    text-decoration: underline;
+}
