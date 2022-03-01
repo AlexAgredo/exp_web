@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Redressed&family=Sansita&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +6,10 @@
 }
 html{
     font-size: 62.5%; /*esto hace que 1rem equivalga a 10px*, el rem se usa para que sea responsive (usarlo primordialmente con el texto), es parecido al % */
-    font-family: Montserrat,sans-serif;
+    font-family: 'Amaranth', sans-serif;
+    
 }
 header {
-  background: rgb(238, 174, 202);
   background: radial-gradient(
     circle,
     rgba(238, 174, 202, 1) 0%,
@@ -21,9 +22,8 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-margin: 0 6.7%;
+margin: 0 8%;
 }
-
 .divHeader img{
     width: 18%;
     height: 18%;
@@ -36,19 +36,69 @@ margin: 0 6.7%;
     justify-content: center;
     list-style: none;
 }
-
 .divHeader li{
     padding: 4%;
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 2.8rem;
+    font-weight:400;
 }
-
 .divHeader a{
     text-decoration: none;
     color: #54759C; /*complementarios*/
 }
-
 .divHeader a:hover{
     color: #E8CA95;
     text-decoration: underline;
+}
+.hero{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.247);
+}
+.background-video {
+  object-fit: cover;
+  width: 100%;
+  height: 55rem;
+}
+.hero-text{
+  text-align: center;
+  position: absolute;
+}
+.hero-text h1{
+  color: white;
+  font-size: 8rem;
+}
+.hero-text h3{
+  color: white;
+  font-size: 5rem;
+  font-weight: 300;
+}
+.descripcion{
+  padding: 1%;
+  background: linear-gradient(90deg, rgb(226, 186, 185) 0%, rgba(238, 174, 202, 0.911) 100%);
+}
+.descripcion .titulo{
+  font-size: 4rem;
+  font-weight: 500;
+}
+.descripcion h2{
+  color: #4e6b8f;
+}
+.descripcion p{
+  margin-top: 0.5%;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.invitados{
+  background: linear-gradient(90deg, rgb(226, 186, 185) 0%, rgba(238, 174, 202, 0.911) 100%);
+}
+.invitados img{
+  width: 25%;
+  height: 25%;
 }
