@@ -46,18 +46,18 @@
       </div>
 
       <div class="infofest">
-        <div class="divlineup">
-          <img src="./src/imgs/CAF 2022.jpg" alt="" />
-        </div>
         <div class="txtlineup">
           <h2 class="titulo">CAF 2022 LINEUP</h2>
-          <p class="parrafo">
-            Te invitamos a conocer todas las bandas que harán nuestro mundo
-            distinto. Desde lo más profundo del techno hasta las letras
-            románticas de la salsa.
-          </p>
-          <h4>Fecha: 19 de junio del 2022</h4>
         </div>
+        <div class="divlineup txtlineup">
+          <img src="./src/imgs/CAF 2022.jpg" alt="" />
+        </div>
+        <p class="parrafo txtlineup">
+          Te invitamos a conocer todas las bandas que harán nuestro mundo
+          distinto. Desde lo más profundo del techno hasta las letras
+          románticas de la salsa.
+        </p>
+        <h4 class="txtlineup">Fecha: 19 de junio del 2022</h4>
       </div>
 
       <div class="divlugar">
@@ -151,18 +151,50 @@
           <iframe
             style="border-radius: 12px"
             src="https://open.spotify.com/embed/playlist/4doBdzO9PBiIq6THtqSIpx?utm_source=generator"
-            width="120%"
+            width="100%"
             height="380"
             frameborder="0"
             allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           ></iframe>
         </div>
-        <div class="circles">
-          <div class="circle1"></div>
-          <div class="circle2"></div>
-          <div class="circle3"></div>
-        </div>
+
+        <div class="galeria">
+            <a href="https://open.spotify.com/artist/0C0XlULifJtAgn6ZNCW2eu?si=OPkF8v2LR0Ss-skKf4v3bg" class="gallink">
+              <figure class="galthumb">
+                <img src="https://i.scdn.co/image/ab67616d00001e02a43cd43ef4f3b2d5413b17f9" alt="" class="galimg">
+                <figcaption class="galcaption">The Killers</figcaption>
+              </figure>
+            </a>
+        
+            <a href="https://open.spotify.com/artist/4wLXwxDeWQ8mtUIRPxGiD6?si=NyVy7GhKSIW4_oDzCRtKvg" class="gallink">
+              <figure class="galthumb">
+                <img src="https://i.scdn.co/image/ab67706c0000da842a50cdda5cef6490704d879e" alt="" class="galimg">
+                <figcaption class="galcaption">Marc Anthony</figcaption>
+              </figure>
+            </a>
+        
+            <a href="https://open.spotify.com/artist/28j8lBWDdDSHSSt5oPlsX2?si=yE9afJE_R2ycNpcKIlSY7g" class="gallink">
+              <figure class="galthumb">
+                <img src="https://i.scdn.co/image/ab67616d00001e02bfaac9fe82f18eeba0f028e3" alt="" class="galimg">
+                <figcaption class="galcaption">ZHU</figcaption>
+              </figure>
+            </a>
+          
+            <a href="https://open.spotify.com/artist/3Sz7ZnJQBIHsXLUSo0OQtM?si=uGrF7MYKT42RzHygAS0UcA" class="gallink">
+              <figure class="galthumb">
+                <img src="https://i.scdn.co/image/ab67616d00001e02ec6e9c13eeed14eedbd5f7c9" alt="" class="galimg">
+                <figcaption class="galcaption">Mac de Marco</figcaption>
+              </figure>
+            </a>
+
+            <a href="https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V?si=HqVWFvYSTAeHm9rcHuAblw" class="gallink">
+              <figure class="galthumb">
+                <img src="https://i.scdn.co/image/ab67616d00001e02bfa99afb5ef0d26d5064b23b" alt="" class="galimg">
+                <figcaption class="galcaption">The Strokes</figcaption>
+              </figure>
+            </a>
+          </div>
       </div>
 
       <div class="divPrecios" id="precios">
@@ -191,83 +223,27 @@
         </div>
       </div>
 
-      <div id="form">
-        <div class="containerForm">
-          <h2 class="titulo">Reserva ya tus entradas</h2>
-          <p class="parrafo">Envianos tu informacion
-              para adquirir las entradas: </p>
-          <br>
-          <form action="form.html" method="post">
-            <div class="textform parrafo">
-              <label for="username">Nombre completo: </label>
-              <input type="text" name="username" id="username" required>
-              <label for="phone">Celular: </label>
-              <input type="number" name="phone" id="phone"  required>
-              <label for="age">Edad: </label>
-              <input type="number" name="age" id="age" max="100" min="18" required>
-              <label for="username">Email: </label>
-              <input type="text" id="username" required>
-            </div>
-
-            <div class="generoform parrafo">
-              <h3>Género: </h3>
-              <label for="genero">Masculino </label>
-              <input type="radio" name="genero" id="genero">
-              <label for="genero">Femenino </label>
-              <input type="radio" name="genero" id="genero">
-              <label for="genero">Prefiero no decirlo </label>
-              <input type="radio" name="genero" id="genero">
-            </div>
-
-            <div class="cityForm parrafo">
-              <h3>Ciudad en la que resides: </h3>
-              <select name="city" id="city" required>
-                  <option value="bogota">Bogotá</option>
-                  <option value="cali">Cali</option>
-                  <option value="medellin">Medellin</option>
-                  <option value="bucaramanga">Bucaramanga</option>
-                  <option value="bogota">Ninguna de las anteriores</option>
-              </select>
-              <label for="city">Otra: </label>
-              <input type="text" name="city" id="city">
-            </div>
-
-            <div class="boletasForm parrafo">
-              <h3>Cantidad de boletas a reservar: </h3>
-              <select name="boletas" id="boletas" required>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-              </select>
-            </div>
-             
-          <div class="generoForm parrafo">
-            <h3>¿Género(s) musical(es) favorito(s)?</h3>
-            <label for="hobbies"> Salsa </label>
-            <input type="checkbox" id="salsa">
-            <label for="hobbies"> Rock </label>
-            <input type="checkbox" id="rock">
-            <label for="hobbies"> Indie </label>
-            <input type="checkbox" id="indie">
-            <label for="hobbies"> Electrónica </label>
-            <input type="checkbox" id="electro">
-            <label for="hobbies"> Hip Hop </label>
-            <input type="checkbox" id="hiphop">
-          </div>
-
-          <div class="dirForm parrafo">
-            <h3 for="dir">Dirección para mandarte las boletas (puedes darnos más especificaciones si lo deseas): </h3>
-            <textarea name="dir" id="dir" cols="110" rows="2" required></textarea>
-            <br>
-            <input type="submit" value="Enviar" id="btnForm">
-          </div>
-
-          </form>
-        </div>
+      <div class="divform">
+        <form class="form" action="form.html" method="post">
+          <h2>RESERVA TUS ENTRADAS</h2>
+          <p type="Nombre:"><input placeholder="Ej: Juan José Ramirez" required class="placeholder"></input></p>
+          <p type="Email:"><input placeholder="Tu correo para contactarte" required class="placeholder"></input></p>
+          <p type="Dirección:"><input placeholder="¿A dónde mandamos las boletas?" required class="placeholder"></input></p>
+          <p type="Cantidad a reservar:">
+            <select name="boletas" id="boletas" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+          </p>
+          <button>ENVIAR</button>
+        </form>
       </div>
+
+      
 
       <div class="divpatro">
         <h2 class="titulo">Patrocinadores</h2>

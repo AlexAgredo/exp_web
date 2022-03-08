@@ -85,7 +85,7 @@ header {
 @keyframes colorLetra {
   /* se usa con porcentajes o palabras clave (from,  to) */
   0% {
-    color: #A1657F ;
+    color: #a1657f;
   }
   100% {
     color: #a7a065;
@@ -94,43 +94,39 @@ header {
 @keyframes colorLetra2 {
   /* se usa con porcentajes o palabras clave (from,  to) */
   0% {
-    background-color: rgb(38, 99, 38) ;
+    background-color: rgb(38, 99, 38);
   }
   100% {
-    background-color: #B02068;
+    background-color: #b02068;
   }
 }
 .descripcion {
   padding: 1%;
-  background-color: #95DFED;
+  background-color: #95dfed;
 }
 .titulo {
   font-size: 4rem;
   font-weight: 500;
   margin: 0 auto;
+  max-width: 900px;
 }
 .descripcion h2 {
-  animation: colorLetra 2s linear 1s infinite alternate
-  backwards;
+  animation: colorLetra 2s linear 1s infinite alternate backwards;
 }
 .parrafo {
   margin-top: 0.5%;
   margin-bottom: 0.5%;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto; /*vetical 0 y horizontal auto*/
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 00;
 }
 
 .infofest {
   padding: 1%;
-  background: linear-gradient(
-    180deg,
-    #95DFED  0%,
-    rgb(231, 157, 144) 100%
-  );
+  background: linear-gradient(180deg, #95dfed 0%, rgb(231, 157, 144) 100%);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -154,9 +150,9 @@ header {
   height: 100%;
 }
 .txtlineup {
-  margin-right: 4%;
-  margin-left: 3%;
+  margin: 0 auto;
   overflow: hidden;
+  padding: 1%;
 }
 .txtlineup h2 {
   color: rgb(38, 99, 38);
@@ -167,15 +163,14 @@ h4 {
   font-style: italic;
   font-size: 3rem;
   font-weight: 300;
-  animation: slidein 5s 1;
 }
-.txtlineup p{
+.txtlineup p {
   animation: slidein 5s 1;
 }
 
 .divlugar {
   padding: 1%;
-  background: #D4E8A7;
+  background: #d4e8a7;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -184,225 +179,235 @@ h4 {
   margin-left: 8%;
   color: black;
 }
-.txtlugar h2{
-  animation: colorLetra 2s linear 1s infinite alternate
-  backwards;
+.txtlugar h2 {
+  animation: colorLetra 2s linear 1s infinite alternate backwards;
 }
 .divmapa {
   margin-left: 8%;
   margin-right: 8%;
 }
 
-
-.txtProgram{
+.txtProgram {
   overflow: hidden;
   color: white;
   padding: 1%;
 }
-.horarios{
+.horarios {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 1%;
 }
 
-.txtplaylist{
-  animation: colorLetra2 2s linear 1s infinite alternate
-  backwards;
+.txtplaylist {
+  animation: colorLetra2 2s linear 1s infinite alternate backwards;
 }
-.txtplaylist h2{
+.txtplaylist h2 {
   display: flex;
   justify-content: center;
-  animation: colorLetra 300ms ease 1s infinite alternate
-  backwards;
+  animation: colorLetra 300ms ease 1s infinite alternate backwards;
   padding: 1%;
 }
-.divplaylist{
+.divplaylist {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   padding: 1%;
-  background: linear-gradient(
-    -360grad,
-    #EDADC8 0%, 
-    #5594A1 100% 
-  );;
+  background: linear-gradient(-360grad, #edadc8 0%, #95dfed 100%);
 }
 
-.circles{
+.spoti{
+  width: 700px;
+  margin-left: 8%;
+}
+.galeria {
+  height: 380px;
+  width: 50%;
+  margin-right: 8%;
+  margin-left: 2%;
+	padding: 2px;
+	transition: .3s;
+  filter: grayscale(1);
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  overflow: hidden;
   align-items: center;
-  height: 40rem;
-  width: 70rem;
-  padding: 1%;
 }
-.circle1{
-  margin-top: 30px;
-  margin-left: 20px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  animation: mover2 800ms linear 1s infinite alternate
-  both;
+.galeria:hover{
+  filter: grayscale(0);
 }
-.circle2{
-  margin-top: 30px;
-  margin-left: 20px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  animation: mover2 600ms linear 1s infinite alternate
-  both;
+.gallink {
+  margin: 5px;
+  overflow: hidden;  
 }
-.circle3{
-    margin-top: 30px;
-    margin-left: 20px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    animation: mover3 900ms ease 1s infinite alternate
-    both;
+.galink:hover {
+    filter: grayscale(0);
 }
-
-@keyframes mover1 {
-  0% {
-    transform: translateX(10%);
-    background-color: red;
-  }
-  100% {
-    transform: translateX(100%)
-      /* translateY(100%) regresa de golpe a su estado inicial */;
-    background-color: yellow;
-  }
+.galthumb {
+  position: relative;
 }
-@keyframes mover2 {
-  0% {
-    transform: translateX(40%);
-    background-color: blue;
-  }
-  100% {
-    transform: translateX(100%)
-      /* translateY(100%) regresa de golpe a su estado inicial */;
-    background-color: orange;
-  }
+.galimg {
+  display: block;
+  transition: .3s;
 }
-@keyframes mover3 {
-  0% {
-    transform: translateX(40%);
-    background-color: green;
-  }
-  100% {
-    transform: translateX(100%)
-      /* translateY(100%) regresa de golpe a su estado inicial */;
-    background-color: purple;
-  }
+.galimg:hover {
+  transform: scale(1.1);
+}
+.galcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  height: 40%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight:700;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+  transition: .3s;
+}
+.galcaption:hover {
+  opacity: 1;
 }
 
 .divPrecios {
-    padding: 1%;
-    background: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: rgb(231, 157, 144); 
-  }
-.txtPrecios {
-    margin-left: 8%;
-    color: black;
-    padding: 1%;
-  }
-.txtPrecios h4{
-  font-weight: bold;
-  color:#B02068;
-}
-
-#form{
   padding: 1%;
-  background: linear-gradient(
-    180deg,
-    #95DFED 0%,
-    rgba(148, 187, 233, 1) 50%,
-    rgba(238, 174, 202, 1)  100% 
-  );
-display: flex;
-justify-content: center;
-}
-.containerForm{
-  background-color: rgba(255, 255, 255, 0.788);
-  width: 100rem;
-  border-radius: 5rem;
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  align-content:space-around;
-  align-items: center
-}
-.textform{
+  background: white;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  background: rgb(231, 157, 144);
 }
-#btnForm{
-  text-transform: uppercase;
-  position: relative;
-  margin-top: 1%;
-  padding: 2% 3%;
-  border-radius: 100px;
-  display: inline-block;
-  color: white;
-  animation: colorLetra2 600ms linear 1s infinite alternate
+.txtPrecios {
+  margin-left: 8%;
+  color: black;
+  padding: 1%;
+}
+.txtPrecios h4 {
+  font-weight: bold;
+  color: #b02068;
 }
 
-.divpatro{
+.divform{
+  padding: 2%;
+  background: linear-gradient(
+    180deg,
+    #e6e6e6 0%,
+    #e6e6e6 70%,
+    #95dfed  100% 
+  );
+  margin: 0 auto;
+}
+.form {
+  width: 340px;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: 0 auto;
+  padding: 20px 30px;
+  max-width: 600px;
+  box-sizing: border-box;
+  font-family: "Amaranth", sans-serif;
+  position: relative;
+}
+.form h2 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+  width: 200px;
+  color: #5594a1;
+  border-bottom: 3px solid #496588;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Amaranth", sans-serif;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+input:focus {
+  border-bottom: 2px solid #78788c;
+}
+
+.form p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 1.5rem;
+  color: #2c2c2c;
+}
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Amaranth", sans-serif;
+  font-size: 1.5rem;
+  border: 2px solid #496588;
+  background: 0;
+  color:#5594a1;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #5594a1;
+  color: #fff;
+}
+
+
+.divpatro {
   padding: 1%;
-  background: #95DFED;
+  background: #95dfed;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.imgpatro img{
+.imgpatro img {
   width: 10%;
   height: 10%;
-  margin-top: 1%;
-  margin-right: 5%;
+  margin-right: 7%;
 }
-.imgpatro{
+.imgpatro {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
-footer{
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:#e8ca95 ;
+  background-color: #e8ca95;
 }
-footer img{
+footer img {
   width: 8%;
   height: 8%;
 }
-footer p{
+footer p {
   font-weight: 300;
   font-size: 1.54rem;
 }
-#logoFest{
+#logoFest {
   width: 15%;
   height: 15%;
   z-index: 1;
   padding-top: 1%;
   mix-blend-mode: luminosity;
 }
-.divRegreso{
-  background-color: #D4E8A7;
+.divRegreso {
+  background-color: #d4e8a7;
 }
-.btnRegreso{
-font-size: 2rem;
-margin-left: 47%;
+.btnRegreso {
+  font-size: 2rem;
+  margin-left: 47%;
 }
