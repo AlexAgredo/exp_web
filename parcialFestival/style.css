@@ -107,6 +107,7 @@ header {
 .titulo {
   font-size: 4rem;
   font-weight: 500;
+  margin: 0 auto;
 }
 .descripcion h2 {
   animation: colorLetra 2s linear 1s infinite alternate
@@ -115,6 +116,8 @@ header {
 .parrafo {
   margin-top: 0.5%;
   margin-bottom: 0.5%;
+  max-width: 600px;
+  margin: 0 auto; /*vetical 0 y horizontal auto*/
   font-size: 2rem;
   font-weight: 200;
 }
