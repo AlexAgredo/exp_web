@@ -1,17 +1,30 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
+html {
+}
+.contenedores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.contenedor {
+  background: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:2px solid black;
+}
 
-}
-.contenedores{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-}
-.contenedor{
-    color: red;
-    
+.boton {
+  position: absolute;
+  padding: 12px;
 }
