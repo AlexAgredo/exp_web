@@ -15,15 +15,15 @@ todosColor();
 
 function cambiarColor(){
   coloresHexa = new Array("0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F");
-  cutIn= 0;
-  var myRandone = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
-  var myRandtwo = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
-  var myRandthree = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
-  var myRandfour = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
-  var myRandfive = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
-  var myRandsix = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
 
-  var sixDigitRandom =  myRandone + myRandtwo + myRandthree + myRandfour + myRandfive + myRandsix; /*se hace la union de los elementos(string) del hexadecimal*/
+  var unoRandom = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
+  var dosRandom = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
+  var tresRandom = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
+  var cuatroRandom = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
+  var cincoRandom = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
+  var seisRandom = coloresHexa[Math.floor(Math.random() * coloresHexa.length)];
+
+  var sixDigitRandom = unoRandom + dosRandom + tresRandom + cuatroRandom + cincoRandom + seisRandom; /*se hace la union de los elementos(string) del hexadecimal*/
   console.log(sixDigitRandom)
 
   // const indice = Math.floor((Math.random() * colores.length));
