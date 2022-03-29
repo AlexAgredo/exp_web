@@ -12,10 +12,10 @@ function cambiarMeme() {
     if (input.value === "AZNTYR") {
         srcArray = new Array("./memes/2.jpg", "./memes/3.jpg", "./memes/4.jpeg", "./memes/5.jpeg", "./memes/6.jpg", "./memes/7.jpg", "./memes/8.jpg", "./memes/9.jpg", "./memes/10.jpg");
         img.src = srcArray[Math.floor(Math.random() * srcArray.length)];
-        error.style.display="none";
+        error.style.display = "none";
     } else {
         console.log(input.value)
-        error.style.display="block";
+        error.style.display = "block";
     }
 
 }
